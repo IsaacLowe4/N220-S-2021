@@ -1,6 +1,6 @@
 function setup() {
     var yellow = "#ffdd00";
-    var mint = "#CBFFFA"
+    var mint = "#CBFFFA";
     
     createCanvas(400, 400);
     background(mint);
