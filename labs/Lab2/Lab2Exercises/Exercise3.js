@@ -12,4 +12,5 @@ function draw() {
   }
   fill(160,10,100);
   circle(xPos,200,50);
+  console.log(xPos);
 }
