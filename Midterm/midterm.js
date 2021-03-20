@@ -1,12 +1,16 @@
 
+//contains Canvas size and global variables for mouseX and mouseY
 function setup() { 
-    createCanvas(600, 800);
+    createCanvas(600, 800);//creates canvas
     cx = mouseX;//global X, unsure if it would work without but didnt have time to risk for beauty
     currentY = mouseY; //global variable for mouse Y due to p5 mouseY not working outsite p5 functions for some reason
 }
+//contains rest of code
 function draw() {
   cx = width - mouseX;// inverse of mouseX
+  
   fill(cx) // Changes color brighter if closer to lower X value
+  
   background(50);
   //Creates downward animation for if mouse is pressed, then returns otherwise
   if(mouseIsPressed){
