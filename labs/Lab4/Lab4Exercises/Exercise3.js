@@ -1,4 +1,4 @@
-let water= [0,0,0];
+let water= [0,0,0,0,0];
 var yPos= 0
 function setup(){
     createCanvas(400,400);
@@ -11,6 +11,8 @@ function draw(){
     water.push(yPos);
     water.shift();
     fill(160,10,100);
-    circle(200,yPos,50);
+    for(i=0;i<water.length;i++){
+        circle(200,water[i],50);
+    }
     console.log("yes");
 }
