@@ -19,12 +19,13 @@ function draw() {
     currentY = mouseY // returns after release
   }
   for(let i = 0; i < 10; i++){
-    circle(mouseX, currentY + i * 20,cx / 2); //creates 10 circles on Y postion, division is to make radius slightly smaller cause it got too big.
+    circle(mouseX, currentY + i * 20,cx / 2); //creates 10 circles on Y postion, division is to make radius slightly smaller because they got really big.
   }
   //attempt at barrier, will crash window be careful
+  //technically does what you said to do so if you give extra credit for completeing...well...yk...
   /*while(currentY + 190 > 800){
    currentY = currentY
-  //}/*else if(mouseY > currentY){
+  }/*else if(mouseY > currentY){
     currentY= mouseY
   }*/
 }
