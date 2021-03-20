@@ -1,7 +1,7 @@
 
 //contains Canvas size and global variables for mouseX and mouseY
 function setup() { 
-    createCanvas(600, 800);//creates canvas
+    createCanvas(600, 800);//creates canvas,
     cx = mouseX;//global X, unsure if it would work without but didnt have time to risk for beauty
     currentY = mouseY; //global variable for mouse Y due to p5 mouseY not working outsite p5 functions for some reason
 }
