@@ -1,57 +1,23 @@
+let dvResponse = document.getElementById("dvResponse");
 
-//application level variables
+let txtCoat = document.getElementById("txtCoat");
 
-let txtGrassCount = document.getElementById("txtGrassCount");
-let txtGrassCount2 = document.getElementById("txtGrassCount2");
-
-
-
-function setup() {
-
-   createCanvas(400,300);
-
-}
+let txtTemperature = document.getElementById("txtTemperature");
 
 
+function doThing() {
 
-//interaction events
+    var temp = Number(txtTemperature.value);
 
-function drawGrass() {
+    var coatText = txtCoat.value.toUpperCase();
 
+    if(isNaN(temp)){
+       return;
+    }
 
+    if(temp < 20 && coatText == "YES") {
 
-   //bg
+        dvResponse.innerHTML = "Wear your coat!";
 
-   background(91, 252, 236, 100);
-
-
-
-   //input cleaning
-
-   let grassCount = Number( txtGrassCount.value );
-   let grassCount2 = Number( txtGrassCount2.value );
-
-
-
-
-   for(let i = 0; i < grassCount2; i++) {
-
-    fill("#abe332");
-
-    let heightOffset = Math.random() * 30;
-
-    rect(i*10, 30+heightOffset,10,100-heightOffset);
-
- }
-
-   for(let i = 0; i < grassCount; i++) {
-
-      fill("#abe332");
-
-      let heightOffset = Math.random() * 30;
-
-      rect(i*10, 30+heightOffset,10,100-heightOffset);
-
+    }
    }
-
-}
