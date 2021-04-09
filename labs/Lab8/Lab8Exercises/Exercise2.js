@@ -13,4 +13,6 @@ for(let i = 0; i < 100; i++){
     //creates new div
     document.body.appendChild(dvStyle)
     
+    /* //optional disco 
+    location.reload();*/
 }
