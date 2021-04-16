@@ -7,12 +7,12 @@ for(let i = 0; i < 100; i++){
     let dvStyle = document.createElement("div")
     //style elements
     dvStyle.style.backgroundColor = "#" + randomColor
-    dvStyle.style.width = "20px"
-    dvStyle.style.height = "20px"
+    dvStyle.style.width = "200px"
+    dvStyle.style.height = "200px"
     dvStyle.style.float = "left"
     //creates new div
     document.body.appendChild(dvStyle)
     
-    /* //optional disco 
-    location.reload();*/
+    //optional disco 
+    location.reload()
 }
